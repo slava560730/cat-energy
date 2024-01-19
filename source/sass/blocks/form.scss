@@ -1,0 +1,40 @@
+.form__box {
+  color: $dark-grey;
+  font-size: 16px;
+font-weight: 400;
+line-height: 18px;
+text-transform: uppercase;
+display: inline;
+align-content: center;
+
+}
+
+.form__input-name {
+  display: inline;
+}
+
+.form__input {
+  border: 1px solid $light-grey;
+  color: $dark-grey;
+  height: 46px;
+  padding-left: 14px;
+
+}
+
+.form__fieldset-contact {
+  border: none;
+}
+
+.form__goal {
+  color: $dark-grey2;
+  font-size: 16px;
+font-weight: 400;
+line-height: 18px;
+text-transform: uppercase;
+}
+
+.form__fieldset-contact__legend {
+font-size: 24px;
+font-weight: 400;
+line-height: 26px;
+}
