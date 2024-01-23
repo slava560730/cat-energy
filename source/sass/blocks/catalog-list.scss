@@ -1,0 +1,16 @@
+.catalog-list__item {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  padding: 20px 0;
+}
+
+.card-list__container-col {
+display: flex;
+justify-content: space-between;
+}
+
+.card-list__container-second-col {
+  display: flex;
+  flex-direction: column;
+}

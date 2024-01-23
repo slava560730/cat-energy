@@ -18,3 +18,7 @@ ul, a {
     clip-path: rect (0 0 0 0);
     overflow: hidden;
   }
+
+  * {
+    box-sizing: border-box;
+  }

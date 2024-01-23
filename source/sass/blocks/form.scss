@@ -11,6 +11,7 @@ align-content: center;
 
 .form__input-name {
   display: inline;
+  margin: 0;
 }
 
 .form__input {
@@ -18,7 +19,18 @@ align-content: center;
   color: $dark-grey;
   height: 46px;
   padding-left: 14px;
+  margin: 0;
+  width: 100%;
 
+}
+
+.form__input-text {
+  border: 1px solid $light-grey;
+  color: $dark-grey;
+  padding: 0;
+  width: 100%;
+  height: min-content;
+  margin: 0;
 }
 
 .form__fieldset-contact {
@@ -33,8 +45,63 @@ line-height: 18px;
 text-transform: uppercase;
 }
 
-.form__fieldset-contact__legend {
+.form__fieldset-contact {
+  padding: 0;
+  margin: 0;
+}
+
+.form__fieldset-contact__legend,
+.form__fieldset-comments__legend {
 font-size: 24px;
 font-weight: 400;
 line-height: 26px;
+margin-bottom: 30px;
+text-align: start;
+}
+
+.form__fieldset-name {
+  padding: 0;
+  margin: 0;
+}
+
+.form {
+  margin: 0;
+  padding: 0;
+}
+
+.form__label-wrapper {
+  display: flex;
+  gap: 20px;
+}
+
+.form__label-radio-w {
+  gap: 15px;
+}
+
+
+.form__fieldset-wrapper {
+display: flex;
+flex-direction: column;
+gap: 14px;
+}
+
+.form__fieldset-comments,
+.form__fieldset-optional {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.form__optional {
+  font-family: inherit;
+font-size: 16px;
+font-weight: 400;
+line-height: 18px;
+text-transform: uppercase;
+}
+
+.form__fieldset-container {
+display: flex;
+flex-direction: column;
+gap: 15px;
 }

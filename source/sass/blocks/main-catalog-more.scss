@@ -1,0 +1,22 @@
+.main-catalog-more__title {
+  text-align: center;
+font-size: 16px;
+font-weight: 400;
+line-height: 20px;
+text-transform: uppercase;
+margin: 0;
+}
+
+.main-catalog-more__subtitle {
+color: $dark-grey;
+text-align: center;
+font-size: 12px;
+font-weight: 400;
+line-height: 16px;
+margin: 0;
+}
+
+.main-catalog-more {
+  display: flex;
+  flex-direction: column;
+}
