@@ -1,0 +1,36 @@
+.button {
+  background-color: $basic-green;
+   border-radius: 0;
+  border: none;
+  color: $white;
+  cursor: pointer;
+  height: 40px;
+  padding: 8px 44px;
+   text-transform: uppercase;
+  width: 100%;
+  font-family: inherit;
+}
+
+.button-all {
+  color: $dark-grey;
+  text-align: center;
+  background-color: $basic-grey;
+  height: 40px;
+  font-size: $font-size16;
+  font-weight: 400;
+  line-height: 20px;
+  padding: 8px 44px;
+  border-radius: 0;
+  text-transform: uppercase;
+  border: none;
+  font-family: inherit;
+}
+
+.button-more {
+  background-color: transparent;
+  border: none;
+  width: min-content;
+  align-self: center;
+  margin: 0;
+  padding: 0;
+}

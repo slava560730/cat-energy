@@ -1,0 +1,37 @@
+.footer__contacts {
+  display: flex;
+  padding: 26px 20px;
+  gap: 2px;
+  justify-content: space-between;
+}
+
+.footer__title {
+  font-size: $font-size16;
+font-weight: 400;
+line-height: 20px;
+text-transform: uppercase;
+margin: 0;
+}
+
+.footer__address {
+color: $dark-grey;
+font-size: $font-size14;
+font-weight: 400;
+line-height: 20px;
+margin: 0;
+}
+
+.footer__map {
+  width: 100%;
+height: 362px;
+}
+
+.footer__bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.copyright__text {
+  margin: 0;
+}
