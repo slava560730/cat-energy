@@ -30,6 +30,8 @@
   content: "";
   display: block;
   position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .main-catalog-bonus::after {
@@ -50,7 +52,7 @@
   margin: 206px 0 0 0;
   color: $white;
 text-align: center;
-font-size: 16px;
+font-size: $font-size16;
 font-style: normal;
 font-weight: 400;
 line-height: 20px;

@@ -1,17 +1,12 @@
 .button {
   background-color: $basic-green;
-  height: 40px;
-  padding: 8px 44px;
-  align-items: center;
-  border-radius: 0;
+   border-radius: 0;
   border: none;
   color: $white;
   cursor: pointer;
   height: 40px;
   padding: 8px 44px;
-  align-items: center;
-  gap: 4px;
-  text-transform: uppercase;
+   text-transform: uppercase;
   width: 100%;
   font-family: inherit;
 }
@@ -21,7 +16,7 @@
   text-align: center;
   background-color: $basic-grey;
   height: 40px;
-  font-size: 16px;
+  font-size: $font-size16;
   font-weight: 400;
   line-height: 20px;
   padding: 8px 44px;

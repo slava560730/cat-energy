@@ -1,20 +1,10 @@
-.card__name {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 20px;
-  text-transform: uppercase;
-  margin: 0 0 14px 0;
-}
+
 
 .card__col {
   color: $dark-grey;
   text-align: center;
-  font-size: 12px;
+  font-size: $font-size12;
   font-weight: 400;
   line-height: 16px;
 }
 
-.card__row {
-  display: flex;
-  justify-content: space-between;
-}
