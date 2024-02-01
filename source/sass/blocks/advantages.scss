@@ -4,6 +4,12 @@
   line-height: 40px;
   margin: 0;
 
+  @media (min-width: $tablet-width) {
+  font-size: $font-size60;
+  line-height: 60px;
+  margin-bottom: 30px;
+  }
+
 }
 
 .advantages {

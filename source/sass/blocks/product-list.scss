@@ -3,6 +3,11 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+
+  @media (min-width: $desktop-width) {
+  flex-direction: row;
+  column-gap: 80px;
+  }
 }
 
 .product-list__item {
@@ -13,6 +18,11 @@
   flex-direction: column;
     padding: 0 33px 0 20px;
   align-items: start;
+  padding-bottom: 18px;
+
+  @media (min-width: $tablet-width) {
+  padding-bottom: 57px;
+  }
 }
 
 .product-list__title {

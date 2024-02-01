@@ -1,8 +1,31 @@
+.footer {
+  @media (min-width: $desktop-width) {
+ position: relative;
+  }
+}
+
 .footer__contacts {
   display: flex;
   padding: 26px 20px;
   gap: 2px;
   justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    padding: 60px 70px;
+    gap: 296px;
+  }
+
+  @media (min-width: $desktop-width) {
+   position: absolute;
+   gap: 15px;
+   background-color: $white;
+   top: 95px;
+   left: 110px;
+   padding: 20px;
+   width: 565px;
+height: 198px;
+align-items: center;
+  }
 }
 
 .footer__title {
@@ -11,6 +34,12 @@ font-weight: 400;
 line-height: 20px;
 text-transform: uppercase;
 margin: 0;
+
+@media (min-width: $tablet-width) {
+font-size: $font-size20;
+line-height: 26px;
+}
+
 }
 
 .footer__address {
@@ -19,6 +48,11 @@ font-size: $font-size14;
 font-weight: 400;
 line-height: 20px;
 margin: 0;
+
+@media (min-width: $tablet-width) {
+  font-size: $font-size16;
+
+}
 }
 
 .footer__map {
@@ -30,6 +64,12 @@ height: 362px;
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+  flex-direction: row;
+justify-content: space-between;
+padding: 0 30px;
+  }
 }
 
 .copyright__text {

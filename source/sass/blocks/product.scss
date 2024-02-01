@@ -1,13 +1,19 @@
 .product {
   display: flex;
   flex-direction: column;
-  color: #fff;
+  color: $white;
 
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    color: $black;
+  }
 }
 
 .product__background-wrapper {
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .product__background-wrapper::after {
@@ -20,6 +26,23 @@
   left: 0;
   height: 302px;
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    background-color: transparent;
+  }
+
+  @media (min-width: $desktop-width) {
+   left: 50%;
+   background-color: $basic-green;
+   opacity: 0.85;
+   content: '';
+   z-index: -1;
+   position: absolute;
+   top: -71px;
+   height: 110%;
+   width: 50%;
+
+  }
 }
 
 .product__background-wrapper::before {
@@ -27,16 +50,57 @@
   background-image: url('../../img/backgrounds/product_background_cat.png');
   background-repeat: no-repeat;
   background-position: center;
-    background-size:cover;
+  background-size: cover;
   content: '';
   height: 302px;
   width: 100%;
   z-index: -2;
+
+  @media (min-width: $tablet-width) {
+background-image: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+  background-image: url('../../img/backgrounds/product_background_cat.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  content: '';
+  height: 100%;
+  width: 50%;
+  z-index: -2;
+  right: 0;
+  }
+
 }
+
+.product__button {
+  @media (min-width: $tablet-width) {
+    top: 256px;
+    left: 87px;
+     position: absolute;
+     width: 244px;
+     height: 54px;
+     font-size: $font-size20;
+     line-height: 20px;
+     padding: 14px 26px;
+    }
+}
+
 
 .product__image {
   display: block;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 709px;
+height: 609px;
+flex-shrink: 0;
+
+src: "img/products/index_cat_tablet_1.png";
+  }
+
 }
 
 .product__title {
@@ -47,6 +111,19 @@
   font-weight: 400;
   line-height: 36px;
   margin: 0 0 25px 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: $font-size60;
+    padding-left: 87px;
+    line-height: 60px;
+    margin: 0 auto 41px 0;
+    text-align: start;
+    width: 75%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 50%;
+  }
 }
 .product__subtitle {
   font-size: $font-size14;
@@ -56,4 +133,14 @@
   text-transform: uppercase;
   margin: 0 0 29px 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: $font-size20;
+    padding-left: 87px;
+    line-height: 20px;
+    margin: 0 auto 20px 0;
+    text-align: start;
+
+
+  }
 }

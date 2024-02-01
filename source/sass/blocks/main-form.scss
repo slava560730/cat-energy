@@ -14,41 +14,17 @@ margin: 0 0 40px 0;
 }
 
 .main-form {
-  margin: 0 20px;
-}
+  padding: 0 20px;
 
-.form__fieldset-name {
-  display: flex;
-  flex-direction: column;
-  gap: 13px;
-  border: 0;
-}
-
-
-
-.form__label-w {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @media (min-width: $tablet-width) {
+    padding: 0 67px 0 70px;
+  }
 
 }
 
-
-.form__label-radio-w {
-  display: flex;
-  align-items: center;
-
-}
 
 .main-form__necessary {
   margin: 0;
 }
 
-
-.form__fieldset-radio {
-  border: none;
-  gap: 20px;
-  display: flex;
-  flex-direction: column;
-}
 

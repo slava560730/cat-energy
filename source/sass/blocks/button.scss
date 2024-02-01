@@ -34,3 +34,15 @@
   margin: 0;
   padding: 0;
 }
+
+.button--form {
+  @media (min-width: $tablet-width) {
+width: 282px;
+
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 50%;
+margin-right: 81px;
+      }
+}

@@ -4,7 +4,8 @@
     <meta charset="utf-8" />
     <title>HTML Academy: Cat Energy</title>
     <link rel="stylesheet" href="css/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
   </head>
   <body class="page__body">
     <header class="main-header">
@@ -49,29 +50,29 @@
           </defs>
         </svg>
       </a>
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню.</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 18" fill="none">
+          <line y1="1.25" x2="24" y2="1.25" stroke="black" stroke-width="1.5"/>
+          <line y1="9.25" x2="24" y2="9.25" stroke="black" stroke-width="1.5"/>
+          <line y1="17.25" x2="24" y2="17.25" stroke="black" stroke-width="1.5"/>
+        </svg>
+      </button>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню.</span>
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 18" fill="none">
-            <line y1="1.25" x2="24" y2="1.25" stroke="black" stroke-width="1.5"/>
-            <line y1="9.25" x2="24" y2="9.25" stroke="black" stroke-width="1.5"/>
-            <line y1="17.25" x2="24" y2="17.25" stroke="black" stroke-width="1.5"/>
-          </svg>
-        </button>
+              <ul class="site-list">
+            <li class="site-list__item">
+              <a href="#" class="site-list__item-link"> Главная </a>
+            </li>
+            <li class="site-list__item">
+              <a href="catalog.html " class="site-list__item-link"> Каталог продукции </a>
+            </li>
+            <li class="site-list__item">
+              <a href="form.html" class="site-list__item-link"> Подбор программы </a>
+            </li>
+          </ul>
+
       </nav>
-      <div class="main-nav__wrapper" hidden>
-        <ul class="site-list">
-          <li class="site-list__item">
-            <a href="#" class="site-list__item-link"> Главная </a>
-          </li>
-          <li class="site-list__item">
-            <a href="catalog.html " class="site-list__item-link"> Каталог продукции </a>
-          </li>
-          <li class="site-list__item">
-            <a href="form.html" class="site-list__item-link"> Подбор программы </a>
-          </li>
-        </ul>
-      </div>
+
     </header>
     <main class="main-container">
 
@@ -151,12 +152,14 @@
       </section>
       <section class="example">
         <h2 class="example__title">Живой пример</h2>
+        <div class="example__container">
+        <div class="example__item-container">
         <p class="example__subtitle">
           Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
           Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и
           по-прежнему спит по 16 часов в день.
         </p>
-        <div class="example__items-wrapper">
+          <div class="example__items-wrapper">
           <div class="example__stats-wrapper">
         <p class="example__stats">5 КГ</p>
         <p class="example__description">снижение веса</p>
@@ -167,6 +170,7 @@
       </div>
       </div>
         <p class="example__item">ЗАТРАТЫ НА ПИТАНИЕ: 15 000 РУБ.</p>
+      </div>
         <div class="example__img-w">
         <img src="./img/examples/cat_before.png" alt="Фото кота до программы питания." class="example__image" />
         <img src="./img/examples/cat_after.png" alt="Фото кота после программы питания." class="example__image" />
@@ -181,7 +185,7 @@
             </svg>
         </button>
       </div>
-
+    </div>
       </section>
     </main>
     <footer class="footer">

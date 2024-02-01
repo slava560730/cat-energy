@@ -2,4 +2,15 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+  }
+
+//   @media (min-width: $desktop-width) {
+// position: absolute;
+// top: 0;
+// margin-bottom: 50px;
+// }
+
 }

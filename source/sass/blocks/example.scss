@@ -1,12 +1,22 @@
 .example {
   background-color: #eaeaea;
   padding: 0 20px 0 20px;
+
+  @media (min-width: $tablet-width) {
+  background-color: $white;
+  }
 }
 
 .example__title {
   font-size: $font-size36;
   font-weight: 400;
   line-height: 40px;
+
+  @media (min-width: $tablet-width) {
+    font-size: $font-size60;
+    line-height: 60px;
+    margin-bottom: 63px;
+  }
 }
 
 .example__subtitle {
@@ -15,7 +25,6 @@
   font-weight: 400;
   line-height: 18px;
   margin-bottom: 20px;
-
 }
 
 .example__items-wrapper {
@@ -46,17 +55,17 @@
   text-align: center;
 
   font-size: $font-size12;
-margin-top: 0;
+  margin-top: 0;
   font-weight: 400;
   line-height: 12px;
 }
 .example__item {
-font-size: $font-size14;
-font-weight: 400;
-line-height: 20px;
-text-transform: uppercase;
-text-align: center;
-margin: 0;
+  font-size: $font-size14;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
 }
 
 .example__img-w {
@@ -64,8 +73,9 @@ margin: 0;
   position: relative;
   margin-bottom: 40px;
 
-
-
+  @media (min-width: $tablet-width) {
+   margin-left: 25%;
+  }
 }
 
 .example__image-button {
@@ -79,7 +89,32 @@ margin: 0;
 }
 
 .example__image {
-
-
   position: relative;
+}
+
+.example__item-container {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    align-items: start;
+  }
+
+}
+
+.example__container {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }

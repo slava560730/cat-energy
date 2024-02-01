@@ -4,5 +4,15 @@
   margin-bottom: 18px;
   padding: 10px 20px 0 20px;
   align-items: center;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+position: static;
+gap: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+  
 }
 
+}
