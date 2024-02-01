@@ -1,8 +1,27 @@
-.main-nav__toggle {
+.main-nav__toggle  {
+  background-image: url("../../img/button/button_mobile_open.png");
+  background-repeat: no-repeat;
   background-color: transparent;
   border: none;
   padding: 0;
   cursor: pointer;
+  width: 24px;
+  height: 18px;
+
+  @media (min-width: $tablet-width) {
+   display: none;
+  }
+}
+
+.main-nav__close {
+  background-image: url("../../img/button/button_mobile_close.png");
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  width: 24px;
+  height: 18px;
 
   @media (min-width: $tablet-width) {
    display: none;
@@ -18,10 +37,14 @@
   left: 0;
   gap: 30px;
 
- 
+
   @media (min-width: $tablet-width) {
     position: static;
     margin-left: auto;
     gap: 33px;
   }
+}
+
+.main-nav--closen {
+display: none
 }

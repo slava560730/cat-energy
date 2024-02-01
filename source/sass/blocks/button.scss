@@ -24,6 +24,11 @@
   text-transform: uppercase;
   border: none;
   font-family: inherit;
+
+
+@media (min-width: $desktop-width) {
+  line-height: 0;
+}
 }
 
 .button-more {

@@ -76,6 +76,9 @@ background-image: none;
 }
 
 .product__button {
+
+  padding: 0 20px;
+
   @media (min-width: $tablet-width) {
     top: 256px;
     left: 87px;

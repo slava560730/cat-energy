@@ -5,3 +5,9 @@ line-height: 36px;
 }
 
 
+.main-catalog-cards {
+
+@media (min-width: $desktop-width) {
+  margin-bottom: 75px;
+}
+}
