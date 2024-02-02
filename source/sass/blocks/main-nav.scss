@@ -1,5 +1,5 @@
 .main-nav__toggle  {
-  background-image: url("../../img/button/button_mobile_open.png");
+
   background-repeat: no-repeat;
   background-color: transparent;
   border: none;
@@ -8,25 +8,9 @@
   width: 24px;
   height: 18px;
 
-  @media (min-width: $tablet-width) {
-   display: none;
-  }
+
 }
 
-.main-nav__close {
-  background-image: url("../../img/button/button_mobile_close.png");
-  background-repeat: no-repeat;
-  background-color: transparent;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-  width: 24px;
-  height: 18px;
-
-  @media (min-width: $tablet-width) {
-   display: none;
-  }
-}
 
 .main-nav {
   position: absolute;
@@ -46,5 +30,28 @@
 }
 
 .main-nav--closen {
-display: none
+    display: none;
+
+
+    @media (min-width: $tablet-width) {
+     display: block;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: block;
+     }
+}
+
+.main-nav__toggle--closen {
+
+  background-image: url("../../img/button/button_mobile_open.png");
+  cursor: pointer;
+  background-repeat: no-repeat;
+}
+
+.main-nav__toggle--open {
+
+  background-image: url("../../img/button/button_mobile_close.png");
+  cursor: pointer;
+  background-repeat: no-repeat;
 }

@@ -11,3 +11,6 @@ npm-debug.*
 source/css/*.css
 source/css/*.map
 Thumbs.db
+source/img/backgrounds/wedding_background.jpg
+source/wed.html
+source/sass/blocks/wedding.scss
