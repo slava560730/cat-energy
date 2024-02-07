@@ -8,13 +8,20 @@
   width: 24px;
   height: 18px;
 
+  @media (min-width: $tablet-width) {
+    display: none;
+   }
+
+   @media (min-width: $desktop-width) {
+     display: none;
+    }
 
 }
 
 
 .main-nav {
   position: absolute;
-  top: 70px;
+  top: 65px;
   right: 0;
   z-index: 5;
   background: white;
@@ -25,7 +32,8 @@
   @media (min-width: $tablet-width) {
     position: static;
     margin-left: auto;
-    gap: 33px;
+
+
   }
 }
 
@@ -35,10 +43,14 @@
 
     @media (min-width: $tablet-width) {
      display: block;
+     width: 56%;
+     gap: 21px;
     }
 
     @media (min-width: $desktop-width) {
       display: block;
+      width: 40%;
+    
      }
 }
 
@@ -47,6 +59,8 @@
   background-image: url("../../img/button/button_mobile_open.png");
   cursor: pointer;
   background-repeat: no-repeat;
+
+
 }
 
 .main-nav__toggle--open {
@@ -54,4 +68,12 @@
   background-image: url("../../img/button/button_mobile_close.png");
   cursor: pointer;
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+   }
+
+   @media (min-width: $desktop-width) {
+     display: none;
+    }
 }
