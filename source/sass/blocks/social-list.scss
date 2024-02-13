@@ -5,6 +5,7 @@
   border-bottom: 1px $middle-grey solid;
   border-top: 1px $middle-grey solid;
   width: 100%;
+  justify-content: center;
 
   @media (min-width: $tablet-width) {
   border: none;

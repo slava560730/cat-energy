@@ -1,33 +1,16 @@
-// .catalog__bonus-img {
-//   background-image: url("../../img/backgrounds/bonus_cat.png");
-// z-index: 1;
-// width: 100%;
-// height: 290px;
-// }
-
-// .catalog-bonus--background {
-//   background-color: $basic-green;
-//   opacity: 0.85;
-//   width: 100%;
-//   height: 290px;
-//   position: absolute;
-
-//   z-index: 2;
-// }
-
 .main-catalog-bonus {
   height: 290px;
   display: block;
   position: relative;
-  padding: 20px 0;
+  padding: 5%;
 }
 
 .main-catalog-bonus::before {
-  background-image: url("../../img/backgrounds/bonus_cat.png");
+  background-image: url('../../img/backgrounds/bonus_cat.png');
   z-index: -2;
   width: 100%;
   height: 290px;
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   background-repeat: no-repeat;
@@ -39,7 +22,7 @@
   opacity: 0.85;
   width: 100%;
   height: 290px;
-  content: "";
+  content: '';
   z-index: -1;
   display: block;
   position: absolute;
@@ -51,12 +34,11 @@
   padding: 0;
   margin: 0;
   color: $white;
-text-align: center;
-font-size: $font-size16;
-font-style: normal;
-font-weight: 400;
-line-height: 20px;
-
+  text-align: center;
+  font-size: $font-size16;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
 }
 
 .catalog-bonus__wrapper {
@@ -65,9 +47,11 @@ line-height: 20px;
   align-items: center;
 
   @media (min-width: $tablet-width) {
-flex-direction: row;
-justify-content: space-around;
+    flex-direction: row;
+    justify-content: space-around;
+  }
 
-   }
-
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+  }
 }

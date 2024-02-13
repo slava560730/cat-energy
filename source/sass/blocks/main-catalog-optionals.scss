@@ -3,8 +3,18 @@ text-align: start;
 font-size: $font-size24;
 font-weight: 400;
 line-height: 24px;
-margin: 0 0 36px 0;
-padding: 0;
+margin: 0;
+padding: 0 5%;
+position: relative;
+width: max-content;
+background-color: $white;
+z-index: 5;
+
+@media (min-width: $tablet-width) {
+  font-size: $font-size36;
+  line-height: 36px;
+}
+
 }
 
 .optionals-bonus__wrapper {
@@ -13,4 +23,25 @@ padding: 0;
   display: grid;
   grid-template-columns: 3fr 1fr;
 }
+}
+
+.catalog-optionals__wrapper {
+position: relative;
+padding: 6% 0;
+
+@media (min-width: $desktop-width) {
+  padding: 3%;
+}
+}
+
+.catalog-optionals__wrapper::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #68b738;
+  right: 0;
+  top: 50%;
+
+
 }

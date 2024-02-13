@@ -5,10 +5,10 @@
 }
 
 .footer__contacts {
-  display: flex;
-  padding: 26px 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 2px;
-  justify-content: space-between;
+ padding: 20px;
 
   @media (min-width: $tablet-width) {
     padding: 60px 70px;
@@ -28,6 +28,17 @@
   }
 }
 
+.footer__contacts--grey {
+  @media (min-width: $tablet-width) {
+    background-color: $basic-grey;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $white;
+  }
+}
+
+
 .footer__title {
   font-size: $font-size16;
   font-weight: 400;
@@ -38,7 +49,7 @@
   @media (min-width: $tablet-width) {
     font-size: $font-size20;
     line-height: 26px;
-    width: 30%;
+    width: 50%;
   }
 }
 

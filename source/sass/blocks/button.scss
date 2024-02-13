@@ -24,10 +24,14 @@
   text-transform: uppercase;
   border: none;
   font-family: inherit;
+  width: max-content;
 
+  @media (min-width: $tablet-width) {
+   margin-top: auto;
+        }
 
 @media (min-width: $desktop-width) {
-  line-height: 0;
+
 }
 }
 
@@ -42,12 +46,12 @@
 
 .button--form {
   @media (min-width: $tablet-width) {
-width: 282px;
-
+font-size: $font-size20;
+height: 52px;
     }
 
     @media (min-width: $desktop-width) {
-      width: 50%;
+
 margin-right: 81px;
       }
 }
