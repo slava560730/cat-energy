@@ -55,3 +55,12 @@ height: 52px;
 margin-right: 81px;
       }
 }
+
+.button:hover {
+  background-color: $special-green;
+}
+
+.button:active,
+.button-all:active {
+ color: rgb(255, 255, 255, 0.3);
+}

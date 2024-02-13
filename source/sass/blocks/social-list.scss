@@ -35,3 +35,15 @@
   background-image: url("../../img/decor/tg.png");
 }
 
+.social-list__link:active,
+.copyright__text:active,
+.copyright__link:active {
+  opacity: 50%;
+}
+
+.social-list__link:focus,
+.copyright__text:focus,
+.copyright__link:focus
+ {
+  fill: $green;
+}

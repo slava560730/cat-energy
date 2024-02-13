@@ -154,3 +154,8 @@
 padding: 0 110px;
           }
 }
+
+.product-list__link:active,
+.product-list__link-arrow:active {
+  opacity: 50%;
+}

@@ -17,7 +17,7 @@
 
   @media (min-width: $desktop-width) {
 gap: 50px;
-  
+
    }
 }
 
@@ -34,10 +34,33 @@ gap: 50px;
     font-weight: normal;
     line-height: 24px;
     font-size: $font-size18;
-    border: none;
+    // border: none;
     width: max-content;
   }
 }
 
+.site-list__item-link:hover {
+  @media (min-width: $tablet-width) {
+opacity: 50%;
+  }
+}
+
+.site-list__item-link:active {
+  @media (min-width: $tablet-width) {
+opacity: 20%;
+  }
+}
+
+
+.current {
+  @media (min-width: $tablet-width) {
+    border-bottom: 2px green solid;
+  }
+
+  @media (min-width: $desktop-width) {
+    border-bottom: 2px $white solid;
+  }
+  }
+
 // .site-list__item:hover
-// border-bottom: 2px green solid;
+//
