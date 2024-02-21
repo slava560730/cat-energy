@@ -1,0 +1,7 @@
+.optionals-bonus__wrapper {
+  border-bottom: 1px solid $basic-grey;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
+}

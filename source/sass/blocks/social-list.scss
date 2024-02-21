@@ -8,10 +8,9 @@
   justify-content: center;
 
   @media (min-width: $tablet-width) {
-  border: none;
-  width: max-content;
-   }
-
+    border: none;
+    width: max-content;
+  }
 }
 
 .social-list__link {
@@ -24,26 +23,19 @@
 }
 
 .social__link--vk {
-  background-image: url("../../img/decor/vkontakte.png");
+  background-image: url('../../img/decor/vkontakte.png');
 }
 
 .social__link--youtube {
-  background-image: url("../../img/decor/youtube.png");
+  background-image: url('../../img/decor/youtube.png');
 }
 
 .social__link--tg {
-  background-image: url("../../img/decor/tg.png");
+  background-image: url('../../img/decor/tg.png');
 }
 
 .social-list__link:active,
 .copyright__text:active,
 .copyright__link:active {
   opacity: 50%;
-}
-
-.social-list__link:focus,
-.copyright__text:focus,
-.copyright__link:focus
- {
-  fill: $green;
 }

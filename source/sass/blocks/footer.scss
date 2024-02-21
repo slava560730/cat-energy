@@ -8,7 +8,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2px;
- padding: 20px;
+  padding: 20px;
 
   @media (min-width: $tablet-width) {
     padding: 60px 70px;
@@ -28,6 +28,14 @@
   }
 }
 
+.footer__contacts--catalog {
+  background-color: $basic-grey;
+
+  @media (min-width: $desktop-width) {
+    background-color: $white;
+  }
+}
+
 .footer__contacts--grey {
   @media (min-width: $tablet-width) {
     background-color: $basic-grey;
@@ -38,10 +46,9 @@
   }
 }
 
-
 .footer__title {
   font-size: $font-size16;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 20px;
   text-transform: uppercase;
   margin: 0;
@@ -56,20 +63,20 @@
 .footer__address {
   color: $dark-grey;
   font-size: $font-size14;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 20px;
   margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
 
-  @media  (min-width: $mobile-width-only) {
-   br {
-    display:none;
-   }
-
+  @media (min-width: $mobile-width-only) {
+    br {
+      display: none;
+    }
   }
   @media (min-width: $tablet-width) {
     br {
       display: inline;
-     }
+    }
     font-size: $font-size16;
     text-align: end;
   }
@@ -79,24 +86,26 @@
   width: 100%;
   height: 362px;
   display: block;
-  background-image: url("../../img/backgrounds/map_mobile.png");
+
   width: 100%;
   height: 362px;
   background-size: contain;
-background-repeat: no-repeat;
-background-position: center;
+  background-repeat: no-repeat;
+  background-position: center;
 
-@media (min-width: $tablet-width) {
-  background-image: url("../../img/backgrounds/map_tablet.png");
-  height: 400px;
-
-  @media (min-width: $desktop-width) {
-    background-image: url("../../img/backgrounds/map_decstop.png");
-  height: 400px;
+  @media (min-resolution: 2dppx) {
+    background-image: url('../../img/backgrounds/map_mobile@2x.png');
   }
-}
 
+  @media (min-width: $tablet-width) {
+    background-image: url('../../img/backgrounds/map_tablet.png');
+    height: 400px;
 
+    @media (min-width: $desktop-width) {
+      background-image: url('../../img/backgrounds/map_decstop.png');
+      height: 400px;
+    }
+  }
 }
 
 .footer__bottom {
@@ -116,6 +125,7 @@ background-position: center;
 
 .copyright__text {
   margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .footer__logo-link {
@@ -123,8 +133,8 @@ background-position: center;
   padding: 37px 0;
 
   @media (min-width: $tablet-width) {
-   width: max-content;
-   }
+    width: max-content;
+  }
 }
 
 .footer__copyright {
@@ -132,14 +142,13 @@ background-position: center;
   justify-content: space-between;
   width: 100%;
   padding: 20px 0;
+  align-items: center;
 
   @media (min-width: $tablet-width) {
-   justify-content: normal;
-   gap: 10px;
-  width: max-content;
-
-   }
-
+    justify-content: normal;
+    gap: 10px;
+    width: max-content;
+  }
 }
 
 .copyright__text {

@@ -3,7 +3,7 @@
   font-size: $font-size36;
   font-weight: 400;
   line-height: 36px;
-  padding-left: 9%;
+
 
   @media (min-width: $tablet-width) {
     font-size: $font-size60;
@@ -18,18 +18,17 @@
   line-height: 18px;
   text-transform: uppercase;
   margin: 0 0 40px 0;
-  padding-left: 9%;
+
 
   @media (min-width: $tablet-width) {
     font-size: $font-size20;
     line-height: 30px;
-    width: 51%;
+    width: 60%;
   }
 
   @media (min-width: $desktop-width) {
-   width: 40%;
+    width: 40%;
   }
-
 }
 
 .main-form {
@@ -41,5 +40,6 @@
 }
 
 .main-form__necessary {
+  font-family: Arial, Helvetica, sans-serif;
   margin: 0;
 }

@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru" class="page">
   <head>
     <meta charset="utf-8" />
@@ -15,120 +15,134 @@
       </button>
       <nav class="main-nav main-nav--closen">
         <ul class="site-list">
-          <li class="site-list__item site-list__item--current">
-            <a href="index.html" class="site-list__item-link"> Главная </a>
+          <li class="site-list__item site-list__item--current__index">
+            <a href="index.html" class="site-list__item-link site-list__item-link--index">
+              Главная
+            </a>
           </li>
           <li class="site-list__item">
-            <a href="catalog.html " class="site-list__item-link"> Каталог продукции </a>
+            <a href="catalog.html " class="site-list__item-link site-list__item-link--index">
+              Каталог продукции
+            </a>
           </li>
           <li class="site-list__item">
-            <a href="form.html" class="site-list__item-link"> Подбор программы </a>
+            <a href="form.html" class="site-list__item-link site-list__item-link--index">
+              Подбор программы
+            </a>
           </li>
         </ul>
       </nav>
     </header>
     <main class="main-container">
-      <section class="product">
+      <section class="product product__padding">
         <div class="product__background-wrapper">
           <h1 class="product__title">Функциональное питание для котов</h1>
           <p class="product__subtitle">Занялся собой? Займись котом!</p>
-          <img
-            src="img/products/index_cat_mobile_1.png"
-            alt="Кэт Энерджи с курицей."
-            class="product__image"
-          />
+          <button type="button" class="product__button button">Подобрать программу</button>
+          <picture>
+            <source media="(min-width: 1440px)" srcset="./img/products/index_cat_desctop_1.png" />
+            <source media="(min-width: 768px)" srcset="./img/products/index_cat_tablet_1.png" />
+            <img
+              width="280"
+              height="270"
+              alt="Кэт Энерджи с курицей."
+              class="product__image"
+              src="./img/products/index_cat_mobile_1.png"
+              srcset="./img/products/index_сat_mobile_1@2x.png 2x"
+            />
+          </picture>
         </div>
-        <button type="button" class="product__button button">Подобрать программу</button>
       </section>
-
-      <section class="product-list-section">
-        <h2 class="visually-hidden">Варианты программ.</h2>
-        <ul class="product-list">
-          <li class="product-list__item product-list__item--slim">
-            <div class="product-list__item-wrapper">
-              <div class="product-list__title-wrapper">
-                <picture class="product-list__pic product-list__pic--slim"></picture>
-                <h2 class="product-list__title">Похудение</h2>
+      <div class="main-product-list__wrapper container">
+        <section class="product-list-section">
+          <h2 class="visually-hidden">Варианты программ.</h2>
+          <ul class="product-list">
+            <li class="product-list__item product-list__item--slim">
+              <div class="product-list__item-wrapper">
+                <div class="product-list__title-wrapper">
+                  <picture class="product-list__pic product-list__pic--slim"></picture>
+                  <h2 class="product-list__title">Похудение</h2>
+                </div>
+                <p class="product-list__subtitle">
+                  Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора
+                  на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
+                </p>
               </div>
-              <p class="product-list__subtitle">
-                Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на
-                диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
-              </p>
-            </div>
-            <a href="catalog.html" class="product-list__link product-list__link-arrow">
-              Каталог SLIM
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="32"
-                height="12"
-                viewBox="0 0 32 12"
-                fill="none"
-              >
-                <line y1="6" x2="18" y2="6" stroke="black" stroke-width="2" />
-                <path d="M24 6L17.25 11.1962L17.25 0.803848L24 6Z" fill="black" />
-              </svg>
-            </a>
-          </li>
-          <li class="product-list__item product-list__item--pro">
-            <div class="product-list__item-wrapper">
-              <div class="product-list__title-wrapper">
-                <picture class="product-list__pic product-list__pic--strong"></picture>
-                <h2 class="product-list__title">Набор массы</h2>
+              <a href="catalog.html" class="product-list__link product-list__link-arrow">
+                Каталог SLIM
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="12"
+                  viewBox="0 0 32 12"
+                  fill="none"
+                >
+                  <line y1="6" x2="18" y2="6" stroke="black" stroke-width="2" />
+                  <path d="M24 6L17.25 11.1962L17.25 0.803848L24 6Z" fill="black" />
+                </svg>
+              </a>
+            </li>
+            <li class="product-list__item product-list__item--pro">
+              <div class="product-list__item-wrapper">
+                <div class="product-list__title-wrapper">
+                  <picture class="product-list__pic product-list__pic--strong"></picture>
+                  <h2 class="product-list__title">Набор массы</h2>
+                </div>
+                <p class="product-list__subtitle">
+                  Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro
+                  поможет вашему коту нарастить необходимые мышцы!
+                </p>
               </div>
-              <p class="product-list__subtitle">
-                Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет
-                вашему коту нарастить необходимые мышцы!
+              <a href="catalog.html" class="product-list__link product-list__link-arrow">
+                Каталог PRO
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="12"
+                  viewBox="0 0 32 12"
+                  fill="none"
+                >
+                  <line y1="6" x2="18" y2="6" stroke="black" stroke-width="2" />
+                  <path d="M24 6L17.25 11.1962L17.25 0.803848L24 6Z" fill="black" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section class="advantages">
+          <h2 class="advantages__header">Как это работает</h2>
+          <ul class="advantages-list">
+            <li class="advantages-list__item">
+              <div class="advantages-list__pic advantages-list__pic--leaf"></div>
+              <p class="advantages-list__desc">
+                Функциональное питание содержит только полезные питательные вещества.
               </p>
-            </div>
-            <a href="catalog.html" class="product-list__link product-list__link-arrow">
-              Каталог PRO
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="32"
-                height="12"
-                viewBox="0 0 32 12"
-                fill="none"
-              >
-                <line y1="6" x2="18" y2="6" stroke="black" stroke-width="2" />
-                <path d="M24 6L17.25 11.1962L17.25 0.803848L24 6Z" fill="black" />
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </section>
-      <section class="advantages">
-        <h2 class="advantages__header">Как это работает</h2>
-        <ul class="advantages-list">
-          <li class="advantages-list__item">
-            <div class="advantages-list__pic advantages-list__pic--leaf"></div>
-            <p class="advantages-list__desc">
-              Функциональное питание содержит только полезные питательные вещества.
-            </p>
-            <span class="advantages-list__item-number">1</span>
-          </li>
-          <li class="advantages-list__item">
-            <div class="advantages-list__pic advantages-list__pic--tub"></div>
-            <p class="advantages-list__desc">
-              Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
-            </p>
-            <span class="advantages-list__item-number">2</span>
-          </li>
-          <li class="advantages-list__item">
-            <div class="advantages-list__pic advantages-list__pic--eat"></div>
-            <p class="advantages-list__desc">
-              Замените один-два приема обычной еды на наше функциональное питание.
-            </p>
-            <span class="advantages-list__item-number">3</span>
-          </li>
-          <li class="advantages-list__item">
-            <div class="advantages-list__pic advantages-list__pic--alarm"></div>
-            <p class="advantages-list__desc">
-              Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
-            </p>
-            <span class="advantages-list__item-number">4</span>
-          </li>
-        </ul>
-      </section>
+              <span class="advantages-list__item-number">1</span>
+            </li>
+            <li class="advantages-list__item">
+              <div class="advantages-list__pic advantages-list__pic--tub"></div>
+              <p class="advantages-list__desc">
+                Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
+              </p>
+              <span class="advantages-list__item-number">2</span>
+            </li>
+            <li class="advantages-list__item">
+              <div class="advantages-list__pic advantages-list__pic--eat"></div>
+              <p class="advantages-list__desc">
+                Замените один-два приема обычной еды на наше функциональное питание.
+              </p>
+              <span class="advantages-list__item-number">3</span>
+            </li>
+            <li class="advantages-list__item">
+              <div class="advantages-list__pic advantages-list__pic--alarm"></div>
+              <p class="advantages-list__desc">
+                Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
+              </p>
+              <span class="advantages-list__item-number">4</span>
+            </li>
+          </ul>
+        </section>
+      </div>
       <section class="example">
         <h2 class="example__title">Живой пример</h2>
         <div class="example__container">
@@ -157,20 +171,24 @@
           </div>
           <div class="example__img-w">
             <div class="example__img-container">
-              <picture
+              <picture>
+                <source media="(min-width: 768px)" srcset="./img/examples/cat_before_tablet.png">
+              <img
+              src="./img/examples/cat_before.png"
                 alt="Фото кота до программы питания."
                 class="example__image example__image--before"
               >
               </picture>
-              <picture
+              <picture>
+                <source media="(min-width: 768px)" srcset="./img/examples/cat_after_tablet.png">
+              <img
+              src="./img/examples/cat_after.png"
                 alt="Фото кота после программы питания."
                 class="example__image example__image--after"
               >
               </picture>
 
-              <button type="button" class="example__image-button">
-
-              </button>
+              <button type="button" class="example__image-button"></button>
             </div>
           </div>
         </div>
@@ -182,7 +200,17 @@
         <p class="footer__address">ул. Большая Конюшенная, д. 19/8<br />Санкт-Петербург</p>
       </div>
       <div class="footer__map-container">
-        <picture alt="Заглушка карты." class="footer__map"></picture>
+        <picture>
+          <source media="(min-width: 1440px)" srcset="./img/backgrounds/map_decstop.png" />
+          <source media="(min-width: 768px)" srcset="./img/backgrounds/map_tablet.png" />
+          <img
+            src="./img/backgrounds/map_mobile.png"
+            width="320"
+            height="362"
+            alt="Заглушка карты."
+            class="footer__map"
+          />
+        </picture>
       </div>
       <div class="footer__bottom">
         <a href="" class="footer__logo-link">

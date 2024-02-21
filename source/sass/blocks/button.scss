@@ -1,13 +1,12 @@
 .button {
   background-color: $basic-green;
-   border-radius: 0;
+  border-radius: 0;
   border: none;
   color: $white;
   cursor: pointer;
   height: 40px;
   padding: 8px 44px;
-   text-transform: uppercase;
-  width: 100%;
+  text-transform: uppercase;
   font-family: inherit;
 }
 
@@ -27,12 +26,11 @@
   width: max-content;
 
   @media (min-width: $tablet-width) {
-   margin-top: auto;
-        }
+    margin-top: auto;
+  }
 
-@media (min-width: $desktop-width) {
-
-}
+  @media (min-width: $desktop-width) {
+  }
 }
 
 .button-more {
@@ -45,15 +43,16 @@
 }
 
 .button--form {
+  width: 100%;
+
   @media (min-width: $tablet-width) {
-font-size: $font-size20;
-height: 52px;
-    }
+    font-size: $font-size20;
+    height: 52px;
+  }
 
-    @media (min-width: $desktop-width) {
-
-margin-right: 81px;
-      }
+  @media (min-width: $desktop-width) {
+    margin-right: 81px;
+  }
 }
 
 .button:hover {
@@ -62,5 +61,5 @@ margin-right: 81px;
 
 .button:active,
 .button-all:active {
- color: rgb(255, 255, 255, 0.3);
+  color: rgb(255, 255, 255, 0.3);
 }

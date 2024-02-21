@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en" class="page">
   <head>
     <meta charset="UTF-8" />
@@ -21,21 +21,21 @@
           <li class="site-list__item site-list__item--current">
             <a href="catalog.html " class="site-list__item-link"> Каталог продукции </a>
           </li>
-          <li class="site-list__item ">
+          <li class="site-list__item">
             <a href="form.html" class="site-list__item-link"> Подбор программы </a>
           </li>
         </ul>
       </nav>
     </header>
     <main class="main-form">
-      <section class="main-form-container">
-        <h1 class="main-form__title">Подбор программы</h1>
-        <p class="main-form__subtitle">
+      <section class="main-form-container ">
+        <h1 class="main-form__title container--form">Подбор программы</h1>
+        <p class="main-form__subtitle container--form">
           Заполните анкету, и мы подберем программу питания для вашего кота
         </p>
-        <form action="index.html" method="post" class="form">
-<div class="form__desktop-wrapper">
-            <fieldset class="form__fieldset-name">
+        <form action="index.html" method="post" class="form ">
+          <div class="form__desktop-wrapper">
+            <fieldset class="form__fieldset-name container--form">
               <div class="form__label-w">
                 <label class="form__label" for="name">Имя:<sup>*</sup></label>
                 <input
@@ -68,7 +68,7 @@
               </div>
             </fieldset>
 
-            <fieldset class="form__fieldset-radio">
+            <fieldset class="form__fieldset-radio ">
               <div class="form__label-radio-w">
                 <input
                   class="form__input-radio"
@@ -82,13 +82,7 @@
                 <label class="form__goal" for="slim">Похудение</label>
               </div>
               <div class="form__label-radio-w">
-                <input
-                  id="fat"
-                  type="radio"
-                  name="goal"
-                  value="fat"
-                  class="form__input-radio"
-                />
+                <input id="fat" type="radio" name="goal" value="fat" class="form__input-radio" />
 
                 <label class="form__goal" for="fat">Набор массы</label>
               </div>
@@ -105,13 +99,15 @@
               </div>
             </fieldset>
           </div>
-            <fieldset class="form__fieldset-contact">
+          <fieldset class="form__fieldset-contact">
+            <div class="form-title__wrapper">
               <legend class="form__fieldset-contact-title">
                 Контактные данные (владельца кота)
               </legend>
-              <div class="form__fieldset-wrapper">
+            </div>
+            <div class="form__fieldset-wrapper container--form">
               <div class="form__label-w">
-                <label class="form__label " for="e-mail">E-mail:<sup>*</sup></label>
+                <label class="form__label" for="e-mail">E-mail:<sup>*</sup></label>
 
                 <input
                   class="form__input"
@@ -120,14 +116,14 @@
                   name="e-mail"
                   placeholder="kuklachev@gmail.com"
                 />
-<span class="form__input-pic form__input-pic--mail"></span>
+                <span class="form__input-pic form__input-pic--mail"></span>
               </div>
-
 
               <div class="form__label-w">
                 <label class="form__label" for="phone">Телефон:<sup>*</sup></label>
+
                 <input
-                  class=" form__input "
+                  class="form__input"
                   id="phone"
                   type="number"
                   minlength="11"
@@ -135,81 +131,88 @@
                   placeholder="8 (960) 900-60-90"
                 />
                 <span class="form__input-pic form__input-pic--phone"></span>
-
-
               </div>
             </div>
-            </fieldset>
+          </fieldset>
 
-            <fieldset class="form__fieldset-comments">
+          <fieldset class="form__fieldset-comments">
+            <div class="form-title__wrapper">
               <legend class="form__fieldset-comments-title">Комментарий</legend>
-              <div class="form__textarea">
-                <label class="visually-hidden">Повадки кота</label>
-                <textarea
+            </div>
+            <div class="form__textarea container--form">
+              <label class="visually-hidden">Повадки кота</label>
+              <textarea
                 class="form__input-text"
-                  name="comment"
-                  type="text"
-                  placeholder="Расскажите обо всех повадках кота"
-                >
-</textarea>
-              </div>
-            </fieldset>
+                name="comment"
+                type="text"
+                placeholder="Расскажите обо всех повадках кота"
+              ></textarea>
+            </div>
+          </fieldset>
 
-            <fieldset class="form__fieldset-optional">
+          <fieldset class="form__fieldset-optional">
+            <div class="form-title__wrapper">
               <legend class="form__fieldset-optional-title">Дополнительно</legend>
-              <div class="form__fieldset-container">
-                <div class="form__input-container">
-              <div class="form__label-wrapper">
-                <input
-                  class="form__input-optional"
-                  id="sugar"
-                  type="checkbox"
-                  value="sugar"
-                  checked
-                />
+            </div>
+            <div class="form__fieldset-container container--form">
+              <div class="form__input-container">
+                <div class="form__label-wrapper">
+                  <input
+                    class="form__input-optional"
+                    id="sugar"
+                    type="checkbox"
+                    value="sugar"
+                    checked
+                  />
 
-                <label class="form__optional" for="sugar">Сахарозаменитель</label>
-              </div>
-              <div class="form__label-wrapper">
-                <input class="form__input-optional" id="water" type="checkbox" value="water" />
+                  <label class="form__optional" for="sugar">Сахарозаменитель</label>
+                </div>
+                <div class="form__label-wrapper">
+                  <input class="form__input-optional" id="water" type="checkbox" value="water" />
 
-                <label class="form__optional" for="water">Питьевая вода</label>
+                  <label class="form__optional" for="water">Питьевая вода</label>
+                </div>
+                <div class="form__label-wrapper">
+                  <input class="form__input-optional" id="milk" type="checkbox" value="milk" />
+                  <label class="form__optional" for="milk">Молоко</label>
+                </div>
+                <div class="form__label-wrapper">
+                  <input
+                    class="form__input-optional"
+                    id="vitamins"
+                    type="checkbox"
+                    value="vitamins"
+                  />
+                  <label class="form__optional" for="vitamins">Витамины</label>
+                </div>
               </div>
-              <div class="form__label-wrapper">
-                <input class="form__input-optional" id="milk" type="checkbox" value="milk" />
-                <label class="form__optional" for="milk">Молоко</label>
-              </div>
-              <div class="form__label-wrapper">
-                <input
-                  class="form__input-optional"
-                  id="vitamins"
-                  type="checkbox"
-                  value="vitamins"
-                />
-                <label class="form__optional" for="vitamins">Витамины</label>
+              <div class="form__necessary-container">
+                <button type="submit" class="button button--form">Отправить заявку</button>
+                <p class="main-form__necessary">* — Обязательные поля</p>
               </div>
             </div>
-<div class="form__necessary-container">
-       <button type="submit" class="button button--form">Отправить заявку</button>
-          <p class="main-form__necessary">* — Обязательные поля</p>
-        </div>
-            </fieldset>
-          </div>
-          </div>
-
-
-
+          </fieldset>
         </form>
       </section>
     </main>
 
     <footer class="footer">
-      <div class="footer__contacts footer__contacts--grey contacts">
+      <div class="footer__contacts contacts">
         <h2 class="footer__title">Приглашаем к сотрудничеству дилеров!</h2>
         <p class="footer__address">ул. Большая Конюшенная, д. 19/8<br />Санкт-Петербург</p>
       </div>
       <div class="footer__map-container">
-        <picture alt="Заглушка карты." class="footer__map"></picture>
+        <picture>
+          <source media="(min-width: 1440px)" srcset="./img/backgrounds/map_decstop.png" />
+          <source media="(min-width: 768px)" srcset="./img/backgrounds/map_tablet.png" />
+          <img
+            src="./img/backgrounds/map_mobile.png"
+            width="320"
+            height="362"
+            alt="Заглушка карты."
+            class="footer__map"
+          />
+        </picture>
       </div>
       <div class="footer__bottom">
         <a href="" class="footer__logo-link">

@@ -4,16 +4,16 @@
   gap: 22px;
 
   @media (min-width: $tablet-width) {
- flex-direction: row;
- flex-wrap: wrap;
- column-gap: 153px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 153px;
   }
 
   @media (min-width: $desktop-width) {
-  flex-wrap: nowrap;
-  column-gap: 94px;
+    flex-wrap: nowrap;
+    column-gap: 94px;
+    padding: 26px 0;
   }
-
 }
 
 .advantages-list__pic {
@@ -29,34 +29,34 @@
 }
 
 .advantages-list__pic::before {
-  content: "";
-
+  content: '';
+background-repeat: no-repeat;
   width: 30px;
   height: 32px;
   display: block;
   position: absolute;
-  left: 0;
+  left: 50%;
   right: 0;
-  top:0;
+  top: 50%;
+  transform: translate(-50%, -50%);
   bottom: 0;
   margin: auto;
 }
 
 .advantages-list__pic--leaf::before {
-  background-image: url("../../img/icons/icon_leaf.png");
-
+  background-image: url('../../img/icons/icon_leaf.svg');
 }
 
 .advantages-list__pic--tub::before {
-  background-image: url("../../img/icons/icon_tub.png");
+  background-image: url('../../img/icons/icon_tub.svg');
 }
 
 .advantages-list__pic--eat::before {
-  background-image: url("../../img/icons/icon_eat.svg");
+  background-image: url('../../img/icons/icon_eat.svg');
 }
 
 .advantages-list__pic--alarm::before {
-  background-image: url("../../img/icons/icon_alarm.png");
+  background-image: url('../../img/icons/icon_alarm.svg');
 }
 
 .advantages-list__item {
@@ -64,44 +64,40 @@
   gap: 20px;
 
   @media (min-width: $tablet-width) {
-  flex-direction: column;
-  height: 280px;
-  width: 35%;
-position: relative;
+    flex-direction: column;
+    height: 280px;
+    width: 35%;
+    position: relative;
   }
-
-
 }
 
 .advantages-list__desc {
-    color: $dark-grey;
-font-size: $font-size14;
-font-weight: 400;
-line-height: 18px;
-max-width: 100%;
-max-height: max-content;
-margin: 0;
+  color: $dark-grey;
+  font-size: $font-size14;
+  font-weight: 400;
+  line-height: 18px;
+  max-width: 100%;
+  max-height: max-content;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
 
-@media (min-width: $tablet-width) {
- font-size: $font-size16;
- line-height: 24px;
+  @media (min-width: $tablet-width) {
+    font-size: $font-size16;
+    line-height: 24px;
   }
-
 }
-
 
 .advantages-list__item-number {
   display: none;
 
   @media (min-width: $tablet-width) {
- line-height: 208px;
- font-size: 280px;
- color: $basic-grey;
- position: absolute;
- z-index: -1;
- right: 0;
- top: 0;
- display: block;
-     }
-
+    line-height: 208px;
+    font-size: 280px;
+    color: $basic-grey;
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    top: 0;
+    display: block;
+  }
 }

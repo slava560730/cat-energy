@@ -1,5 +1,4 @@
-.main-nav__toggle  {
-
+.main-nav__toggle {
   background-repeat: no-repeat;
   background-color: transparent;
   border: none;
@@ -10,14 +9,12 @@
 
   @media (min-width: $tablet-width) {
     display: none;
-   }
+  }
 
-   @media (min-width: $desktop-width) {
-     display: none;
-    }
-
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
-
 
 .main-nav {
   position: absolute;
@@ -28,52 +25,44 @@
   left: 0;
   gap: 30px;
 
-
   @media (min-width: $tablet-width) {
     position: static;
     margin-left: auto;
-
-
+    background-color: transparent;
   }
 }
 
 .main-nav--closen {
-    display: none;
+  display: none;
 
+  @media (min-width: $tablet-width) {
+    display: block;
+    width: 56%;
+    gap: 21px;
+  }
 
-    @media (min-width: $tablet-width) {
-     display: block;
-     width: 56%;
-     gap: 21px;
-    }
-
-    @media (min-width: $desktop-width) {
-      display: block;
-      width: 40%;
-    
-     }
+  @media (min-width: $desktop-width) {
+    display: block;
+    width: 40%;
+  }
 }
 
 .main-nav__toggle--closen {
-
-  background-image: url("../../img/button/button_mobile_open.png");
+  background-image: url('../../img/button/button_mobile_open.png');
   cursor: pointer;
   background-repeat: no-repeat;
-
-
 }
 
 .main-nav__toggle--open {
-
-  background-image: url("../../img/button/button_mobile_close.png");
+  background-image: url('../../img/button/button_mobile_close.png');
   cursor: pointer;
   background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
     display: none;
-   }
+  }
 
-   @media (min-width: $desktop-width) {
-     display: none;
-    }
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }

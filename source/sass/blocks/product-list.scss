@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding: 0 15px;
+  margin-bottom: 20px;
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
@@ -70,6 +70,7 @@
   font-weight: 400;
   line-height: 18px;
   margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
 
   @media (min-width: $tablet-width) {
     width: 50%;
@@ -151,8 +152,7 @@
 .product-list-section {
   @media (min-width: $desktop-width) {
     margin-bottom: 40px;
-padding: 0 110px;
-          }
+  }
 }
 
 .product-list__link:active,

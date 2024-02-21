@@ -5,18 +5,14 @@
   margin: 0 0 40px 0;
 
   @media (min-width: $tablet-width) {
-  font-size: $font-size60;
-  line-height: 60px;
-  margin-bottom: 30px;
+    font-size: $font-size60;
+    line-height: 60px;
+    margin-bottom: 30px;
   }
-
 }
 
 .advantages {
-  padding: 0 20px;
-
   @media (min-width: $desktop-width) {
     margin-bottom: 60px;
-padding: 0 110px;
-          }
+  }
 }

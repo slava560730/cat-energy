@@ -6,12 +6,14 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 20px 6%;
-    padding: 0 5%;
+    gap: 20px 60px;
+    justify-content: center;
+
   }
 
   @media (min-width: $desktop-width) {
     gap: 92px 80px;
+    justify-content: start;
   }
 }
 
@@ -19,9 +21,9 @@
   display: flex;
   flex-direction: column;
   gap: 13px;
-  padding: 20px 5%;
+  padding: 20px;
   border-top: 1px solid $basic-grey;
-border-bottom: 1px solid $basic-grey;
+  border-bottom: 1px solid $basic-grey;
 
   @media (min-width: $tablet-width) {
     width: 324px;
@@ -47,7 +49,6 @@ border-bottom: 1px solid $basic-grey;
 .catalog-list__desc {
   display: flex;
   flex-direction: column;
-  gap:10px;
 }
 
 .catalog-list__title {
@@ -70,7 +71,6 @@ border-bottom: 1px solid $basic-grey;
   @media (min-width: $tablet-width) {
     border-bottom: 1px solid $middle-grey;
   }
-
 }
 
 .catalog-list__item--more__title {
@@ -82,11 +82,9 @@ border-bottom: 1px solid $basic-grey;
   margin: 0;
 
   @media (min-width: $tablet-width) {
-   font-size: $font-size20;
-   line-height: 22px;
+    font-size: $font-size20;
+    line-height: 22px;
   }
-
-
 }
 
 .catalog-list__item--more__subtitle {
@@ -96,26 +94,25 @@ border-bottom: 1px solid $basic-grey;
   font-weight: 400;
   line-height: 16px;
   margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
 
   @media (min-width: $tablet-width) {
     font-size: $font-size16;
     line-height: 18px;
-   }
-
-
+  }
 }
 
 .catalog-list__item--more {
   display: flex;
   flex-direction: column;
+  align-items: center;
 
   @media (min-width: $tablet-width) {
     background-color: transparent;
-    border: 1px solid $middle-grey;
+    border: 2px solid $basic-grey;
   }
 
   @media (min-width: $desktop-width) {
-   
   }
 }
 

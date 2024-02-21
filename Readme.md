@@ -1,7 +1,7 @@
-# Личный проект «Cat-Energy11» 
+# Личный проект «Cat-Energy11»
 
-* Студент: `goodcovich`
-* Наставник: `Slava`.
+- Студент: `goodcovich`
+- Наставник: `Slava`.
 
 ---
 
