@@ -1,54 +1,45 @@
 .main-form__title {
-margin: 0 0 37px 0;
-font-size: $font-size36;
-font-weight: 400;
-line-height: 36px
+  margin: 0 0 37px 0;
+  font-size: $font-size36;
+  font-weight: 400;
+  line-height: 36px;
+
+
+  @media (min-width: $tablet-width) {
+    font-size: $font-size60;
+    line-height: 60px;
+    // width: 50%;
+  }
 }
 
 .main-form__subtitle {
   font-size: $font-size14;
-font-weight: 400;
-line-height: 18px;
-text-transform: uppercase;
-margin: 0 0 40px 0;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  margin: 0 0 40px 0;
+
+
+  @media (min-width: $tablet-width) {
+    font-size: $font-size20;
+    line-height: 30px;
+    width: 60%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 40%;
+  }
 }
 
 .main-form {
-  margin: 0 20px;
-}
+  padding: 20px 0;
 
-.form__fieldset-name {
-  display: flex;
-  flex-direction: column;
-  gap: 13px;
-  border: 0;
-}
-
-
-
-.form__label-w {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-}
-
-
-.form__label-radio-w {
-  display: flex;
-  align-items: center;
-
+  @media (min-width: $tablet-width) {
+    padding: 60px 0;
+  }
 }
 
 .main-form__necessary {
+  font-family: Arial, Helvetica, sans-serif;
   margin: 0;
 }
-
-
-.form__fieldset-radio {
-  border: none;
-  gap: 20px;
-  display: flex;
-  flex-direction: column;
-}
-

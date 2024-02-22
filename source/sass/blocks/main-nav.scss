@@ -1,6 +1,68 @@
 .main-nav__toggle {
-background-color: transparent;
-border: none;
-padding: 0;
- cursor: pointer;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  width: 24px;
+  height: 18px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.main-nav {
+  position: absolute;
+  top: 65px;
+  right: 0;
+  z-index: 5;
+  background: white;
+  left: 0;
+  gap: 30px;
+
+  @media (min-width: $tablet-width) {
+    position: static;
+    margin-left: auto;
+    background-color: transparent;
+  }
+}
+
+.main-nav--closen {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    width: 56%;
+    gap: 21px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    width: 40%;
+  }
+}
+
+.main-nav__toggle--closen {
+  background-image: url('../../img/button/button_mobile_open.png');
+  cursor: pointer;
+  background-repeat: no-repeat;
+}
+
+.main-nav__toggle--open {
+  background-image: url('../../img/button/button_mobile_close.png');
+  cursor: pointer;
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
