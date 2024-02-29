@@ -17,8 +17,6 @@
   }
 }
 
-
-
 .catalog-optionals__wrapper {
   position: relative;
 
@@ -26,9 +24,9 @@
     padding: 68px 31px;
   }
 
-
   @media (min-width: $desktop-width) {
- padding: 76px 70px;
+    padding: 56px 70px;
+    margin-bottom: 25px;
   }
 }
 
@@ -44,7 +42,15 @@
 
 .catalog-optinals__desctop_wrapper {
   @media (min-width: $desktop-width) {
-   display: grid;
-   grid-template-columns: 4fr 1fr;
-     }
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    padding: 0 110px;
+  }
+}
+
+.show-more--svg {
+  @media (min-width: $tablet-width) {
+   width: 60px;
+   height: 60px;
+  }
 }

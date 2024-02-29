@@ -23,8 +23,6 @@
 }
 
 .container--catalog {
-
-
   @media (min-width: $tablet-width) {
     padding: 0 30px;
   }
@@ -34,17 +32,30 @@
   }
 }
 
-
-
 .container--optionals {
   padding: 0 20px;
 
   @media (min-width: $tablet-width) {
     padding: 0 30px;
+    margin-bottom: 69px;
+
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 0 0 110px;
+    padding: 0;
+    margin-right: 79px;
+  }
+}
+
+.container--bonus {
+  margin: 35px 20px;
+
+  @media (min-width: $tablet-width) {
+     margin: 0 30px 76px 30px;
   }
 
+  @media (min-width: $desktop-width) {
+margin: 0;
+padding: 56px 43px 42px 41px;
+  }
 }

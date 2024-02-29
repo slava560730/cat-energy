@@ -18,12 +18,11 @@
   font-size: $font-size16;
   font-weight: 400;
   line-height: 20px;
-  padding: 8px 44px;
   border-radius: 0;
   text-transform: uppercase;
   border: none;
   font-family: inherit;
-  width: max-content;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
     margin-top: auto;
@@ -40,6 +39,11 @@
   align-self: center;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 49px;
+          }
+
 }
 
 .button--form {
@@ -48,6 +52,7 @@
   @media (min-width: $tablet-width) {
     font-size: $font-size20;
     height: 52px;
+    margin-bottom: 49px;
   }
 
   @media (min-width: $desktop-width) {
@@ -62,4 +67,9 @@
 .button:active,
 .button-all:active {
   color: rgb(255, 255, 255, 0.3);
+}
+
+.button--order {
+  font-size: $font-size16;
+  line-height: 20px;
 }

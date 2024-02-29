@@ -21,7 +21,7 @@
     background-color: $white;
     top: 95px;
     left: 110px;
-    padding: 20px;
+    padding: 56px 80px;
     width: 565px;
     height: 198px;
     align-items: center;
@@ -58,6 +58,10 @@
     line-height: 26px;
     width: 50%;
   }
+
+  @media (min-width: $desktop-width) {
+  width: 100%;
+  }
 }
 
 .footer__address {
@@ -93,6 +97,7 @@
   background-repeat: no-repeat;
   background-position: center;
 
+
   @media (min-resolution: 2dppx) {
     background-image: url('../../img/backgrounds/map_mobile@2x.png');
   }
@@ -107,6 +112,9 @@
     }
   }
 }
+
+
+
 
 .footer__bottom {
   display: flex;
@@ -163,4 +171,20 @@
   background-image: url('../../img/logo/footer_logo_mobile.png');
   width: 27px;
   height: 34px;
+}
+
+
+.footer__map-container::after {
+  content: "";
+ background-image: url("../../img/icons/map_pin.png");
+ width: 53px;
+height: 57px;
+display: block;
+position: absolute;
+top: 50%;
+left: 50%;
+}
+
+.footer__map-container {
+  position: relative;
 }
