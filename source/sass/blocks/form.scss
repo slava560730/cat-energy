@@ -123,8 +123,6 @@
   padding: 0;
   margin: 0;
   border: none;
-
-
 }
 
 .form__fieldset-contact-title,
@@ -145,7 +143,7 @@
     font-size: $font-size36;
     line-height: 36px;
     width: max-content;
-padding: 0 39px;
+    padding: 0 39px;
   }
 }
 
@@ -177,7 +175,6 @@ padding: 0 39px;
   flex-direction: column;
   gap: 14px;
 
-
   @media (min-width: $tablet-width) {
     padding: 0;
   }
@@ -197,8 +194,6 @@ padding: 0 39px;
   border: none;
   padding: 0;
   margin: 0;
-
-
 }
 
 .form__fieldset-optional {
@@ -223,12 +218,10 @@ padding: 0 39px;
   flex-direction: column;
   gap: 15px;
 
-
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
     gap: 30px;
-
   }
 
   @media (min-width: $desktop-width) {
@@ -281,8 +274,6 @@ padding: 0 39px;
 }
 
 .form__textarea {
-
-
   @media (min-width: $tablet-width) {
     padding: 0;
   }
@@ -298,7 +289,7 @@ padding: 0 39px;
   gap: 20px;
   display: flex;
   flex-direction: column;
-padding: 20px 0;
+  padding: 20px 0;
   margin: 0;
   border: 1px solid $basic-grey;
 
@@ -367,6 +358,4 @@ padding: 20px 0;
   background-color: #68b738;
   right: 0;
   top: 50%;
-
-
 }

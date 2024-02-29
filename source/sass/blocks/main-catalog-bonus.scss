@@ -2,9 +2,18 @@
   height: 290px;
   display: block;
   position: relative;
- margin: 20px;
- padding: 20px;
 
+  padding: 20px;
+
+
+  @media (min-width: $tablet-width) {
+   height: 200px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 289px;
+    width: 245px;
+  }
 }
 
 .main-catalog-bonus::before {
@@ -20,6 +29,16 @@
   left: 50%;
   transform: translate(-50%, -50%);
   background-size: cover;
+
+  @media (min-width: $tablet-width) {
+    background-image: url('../../img/backgrounds/bonus_cat_tablet.png');
+    height: 200px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 289px;
+    background-image: url('../../img/backgrounds/bonus_cat.png');
+  }
 }
 
 .main-catalog-bonus::after {
@@ -34,6 +53,14 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+
+  @media (min-width: $tablet-width) {
+    height: 200px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 290px;
+  }
 }
 
 .main-catalog-bonus__text {
@@ -46,6 +73,16 @@
   font-weight: 400;
   line-height: 20px;
   font-family: Arial, Helvetica, sans-serif;
+
+  @media (min-width: $tablet-width) {
+    width: 25%;
+    text-align: start;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .catalog-bonus__wrapper {
@@ -55,13 +92,17 @@
   margin: 50px 0;
   gap: 48px;
 
-
   @media (min-width: $tablet-width) {
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin: 60px 0;
+    padding: 0 124px 0 77px;
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: column;
+    padding: 0;
+    gap: 46px;
+    margin: 0;
   }
 }

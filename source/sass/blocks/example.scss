@@ -9,6 +9,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    border: none;
   }
 }
 
@@ -154,14 +155,14 @@
 
   @media (min-width: $tablet-width) {
     background-color: $basic-grey;
-    min-height: 512px;
+    min-height: 462px;
     position: relative;
   }
 
   @media (min-width: $desktop-width) {
     margin: 0;
     position: absolute;
-      right: 25%;
+    right: 25%;
   }
 }
 
@@ -171,7 +172,6 @@
 
   @media (min-width: $tablet-width) {
     position: absolute;
-
   }
 }
 
@@ -183,18 +183,13 @@
   clip-path: rect(0px 0px 100% 50%);
 
   @media (min-width: $tablet-width) {
-
-
   }
 }
 
 .example__image--after {
   clip-path: rect(0px 100% 100% 50%);
 
-
   @media (min-width: $tablet-width) {
-
-
   }
 }
 

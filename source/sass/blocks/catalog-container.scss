@@ -2,11 +2,10 @@
   padding: 20px 0;
 
   @media (min-width: $tablet-width) {
-
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 75px;
+  
   }
 }
 
@@ -15,8 +14,7 @@
   flex-direction: column;
   padding: 0;
 
-  @media (min-width: $desktop-width) {
-  }
+
 }
 
 .catalog-cards__title {
@@ -26,10 +24,13 @@
   line-height: 36px;
   padding-left: 20px;
 
-
   @media (min-width: $tablet-width) {
     font-size: $font-size60;
     line-height: 60px;
-    margin-bottom: 82px;
+    margin-bottom: 163px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 165px;
   }
 }

@@ -37,6 +37,10 @@
     height: 900px;
     position: static;
   }
+
+  @media (min-width: $desktop-width) {
+height: 696px;
+  }
 }
 
 .product__background-wrapper::after {
@@ -85,6 +89,7 @@
 
   @media (min-width: $tablet-width) {
     background-image: none;
+    width: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -105,7 +110,6 @@
 .product__button {
   margin: 0 20px;
   padding: 0 20px;
-
 
   @media (min-width: $tablet-width) {
     top: 256px;
@@ -132,8 +136,6 @@
   right: 0;
   left: 0;
   background-color: transparent;
-
-
 
   @media (min-width: $tablet-width) {
     width: max-content;
