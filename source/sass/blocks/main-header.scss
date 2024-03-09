@@ -5,6 +5,7 @@
   align-items: center;
   position: relative;
   border-bottom: 1px solid $basic-grey;
+height: 66px;
 
   @media (min-width: $tablet-width) {
     position: static;
@@ -17,42 +18,27 @@
   }
 }
 
-.main-header__logo-pic {
-  background-image: url('../../img/logo/logo_mobile.png');
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 35px;
-  height: 40px;
-
-  @media (min-resolution: 2dppx) {
-    background-image: url('../../img/logo/logo_mobile@2x.png');
-  }
-
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
-
-  @media (min-width: $desktop-width) {
-    display: none;
-  }
-}
-
 .main-header__logo {
-  background-image: url('../../img/logo/logo_mobile_text.png');
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 100px;
-  height: 20px;
+display: flex;
+width: 191px;
+height: 38px;
+align-items: center;
+
 
   @media (min-width: $tablet-width) {
-    background-image: url('../../img/logo/logo_tablet.png');
-    width: 174px;
-    height: 51px;
+
   }
 
   @media (min-width: $desktop-width) {
-    background-image: url('../../img/logo/logo_desktop.png');
-    width: 202px;
-    height: 60px;
+
   }
 }
+
+.main-header__logo:hover {
+  opacity: 30%;
+}
+
+.main-header__logo:active {
+  opacity: 50%;
+}
+

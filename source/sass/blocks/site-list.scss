@@ -64,6 +64,10 @@
 }
 
 .site-list__item--current__index {
+  @media (min-width: $tablet-width) {
+    border-bottom: 2px green solid;
+  }
+  
   @media (min-width: $desktop-width) {
     border-bottom: 2px $white solid;
   }
