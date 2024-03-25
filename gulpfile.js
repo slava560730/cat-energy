@@ -68,12 +68,17 @@ webp: {}
 // // SVG
 
 const svg = () =>
-gulp.src(['source/img/*.svg', '!source/img/icons/*.svg'])
+gulp.src(['source/img/*.svg', '!source/img/sprite/*.svg'])
 .pipe(svgo())
 .pipe(gulp.dest('build/img'));
 
+const svgLogos = () =>
+gulp.src(['source/img/logos/*.svg'])
+.pipe(svgo())
+.pipe(gulp.dest('build/img/logos'));
+
 const sprite = () => {
-return gulp.src('source/img/icons/*.svg')
+return gulp.src('source/img/sprite/*.svg')
 .pipe(svgo())
 .pipe(svgstore({
 inlineSvg: true
@@ -81,6 +86,8 @@ inlineSvg: true
 .pipe(rename('sprite.svg'))
 .pipe(gulp.dest('build/img'));
 }
+
+
 
 
 
@@ -143,6 +150,7 @@ styles,
 html,
 scripts,
 svg,
+svgLogos,
 sprite,
 createWebp
 ),
@@ -159,6 +167,7 @@ styles,
 html,
 scripts,
 svg,
+svgLogos,
 sprite,
 createWebp
 ),
